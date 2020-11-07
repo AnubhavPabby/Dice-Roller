@@ -8,12 +8,27 @@
     android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/dice_img"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/empty_dice"
-        tools:src="@drawable/dice_1"/>
+        android:layout_gravity="center"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/dice_img_white"
+            android:layout_width="219dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/empty_dice"
+            tools:src="@drawable/white_dice_1" />
+
+        <ImageView
+            android:id="@+id/dice_img_red"
+            android:layout_width="wrap_content"
+            android:layout_height="323dp"
+            android:src="@drawable/empty_dice"
+            tools:src="@drawable/red_dice_1" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/roll_button"
@@ -21,5 +36,4 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/rollbtn" />
-
 </LinearLayout>
