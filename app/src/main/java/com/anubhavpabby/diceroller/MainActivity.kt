@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollWhiteDice(){
         val randomInt = Random.nextInt(6) + 1
-        val drawableImageRandomId = when(randomInt){
+        val drawableImageRandomId:Int = when(randomInt){
             1 -> R.drawable.white_dice_1
             2 -> R.drawable.white_dice_2
             3 -> R.drawable.white_dice_3
